@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="test2.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="main">
+        <header class="header">
+            <h1 id="title" class="text-center">Underdogs Formulario</h1>
+            <p id="description" class="description text-center">Si desea unirse a Underdogs complete el siguiente formulario</p>
+        </header>
+        <div class="flex-container">
+            <form id="survey-form" class="form">
+                <div class="form__section">
+                    <label id="name-label" for="name">Nombre</label>
+                    <input id="name" type="text" name="name" class="form__input" placeholder="Nombre" required>
+                </div>
+                <div class="form__section">
+                    <label id="email-label" for="email">Email</label>
+                    <input id="email" type="email" name="email" class="form__input" placeholder="Email" required>
+                </div>
+                <div class="form__section">
+                    <label for="asunto">Asunto</label>
+                    <input name="asunto" type="text" class="form__input" placeholder="Asunto">
+                </div>
+                <div class="form__section">
+                    <label id="number-label" for="age">Edad</label>
+                    <input type="number" name="age" id="number" min="1" max="150" placeholder="Edad" class="form__input" required>
+                </div>
+                <div class="form__section">
+                    <label>Cual sera su Rol en la Hermandad ?</label>
+                    <select id="dropdown" class="form__input color-none" required>
+                      <option value="none" disabled selected value>Selecciona un Roll</option>
+                      <option value="Tank">Tank</option>
+                      <option value="Heal">Heal</option>
+                      <option value="Dps">DPS</option>
+                      <option value="Mixto">Tank & Heal</option>
+                      <option value="Mixto1">Tank & DPS</option>
+                      <option value="Mixto2">Heal & DPS</option>
+                      <option value="Mixto3">Tank, Heal & DPS</option>
+                    </select>
+                  </div>
+                <div class="form__section">
+                    <label>Que tan experimentado eres en END-GAME ?</label>
+                    <div class="div-input-radio">
+                        <div>
+                            <input name="Experiencia" value="Muy Experimentado" type="radio"/> Muy Experimentado
+                        </div>
+                        <div>
+                            <input name="Experiencia" value="Experimentado" type="radio"/> Experimentado
+                        </div>
+                        <div>
+                            <input name="Experiencia" value="Poco Experimentado" type="radio"/> Poco Experimentado
+                        </div>
+                    </div>
+                </div>
+                <div class="form__section">
+                    <label>Cuales son tus Cualidades como Player ?</label>
+                    <div class="div-checkbox">
+                        <div><input value="Compañero" type="checkbox"/> - Compañero</div>
+                        <div><input value="Respetuoso" type="checkbox"/> - Respetuoso</div>
+                        <div><input value="Amable" type="checkbox"/> - Amable</div>
+                        <div><input value="Tener Empatia" type="checkbox"/> - Empatia</div>
+                        <div><input value="Compromiso" type="checkbox"/> - Compromiso</div>
+                        <div><input value="Democrático" type="checkbox"/> - Democrático</div>
+                    </div>
+                </div>
+                  <div class="form__section">
+                    <label for="textarea">Contenido del Mensaje</label>
+                    <textarea name="textarea"class="form__input" placeholder="Escriba su Mensaje"></textarea>
+                </div>
+                  <div class="form__section">
+                    <input id="submit" type="submit" class="form__input">
+                </div>
+            </form>
+            <div class="form-img">
+                <img src="https://game-tournaments.com/media/logo/t25586.png" height="200" width="200">
+            </div>
+        </div>
+        <footer class="footer">
+            <h2>High End Game International Guild Underdogs</h2>
+        </footer>
+    </div>
+</body>
+</html>

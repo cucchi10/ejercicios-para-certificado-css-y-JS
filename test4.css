@@ -1,0 +1,143 @@
+body {
+    min-width: 250px;
+    background-color: rgb(75, 69, 69);
+    color: beige;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.nav {
+    min-width: 200px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    height: 100%;
+    background-color: rgb(122, 141, 135);
+    border-right: solid;
+    border-color: rgb(94, 109, 104);
+}
+
+.nav_li {
+    padding: 10px 0;
+    list-style-type: none;
+}
+
+.nav_li a {
+    text-decoration: none;
+    color: beige;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    padding-bottom: 25px;
+    padding-left: 200px;
+}
+
+.main p {
+    margin-left: 15px;
+}
+
+.main ul, .main ol {
+    margin-left: 15px;
+}
+
+
+.footer {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    min-width: 250px;
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgb(122, 81, 81);
+    justify-content: end;
+    border-top: solid;
+    border-color: rgb(94, 109, 104);
+}
+
+.footer p {
+    padding-right: 10px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: beige;
+}
+
+header {
+    margin: 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.pre {
+    width: 50%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: black;
+    color: rgb(32, 194, 14);
+    border-radius: 5px;
+}
+
+
+
+@media only screen and (max-width: 650px) {
+
+    .main-section {
+        padding-top: 70px;
+    }
+
+    .nav-responsive {
+        z-index: 100;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        background-color: rgb(122, 141, 135);
+        border-bottom: solid;
+        border-color: rgb(94, 109, 104);
+    }
+
+    .nav {
+        height: auto;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2px;
+        margin-bottom: 2px;
+        padding-bottom: 25px;
+        padding-left: 0;
+    }
+
+    .nav_ul {
+        position: absolute;
+        flex-direction: column;
+        top: -460px;
+        transition: all 1.2s;
+        background-color: rgb(122, 141, 135);
+        padding: 20px;
+        border-bottom-right-radius: 5px;
+        border-bottom: solid;
+        border-right: solid;
+        border-color: rgb(94, 109, 104);
+    }
+
+    .navbar:hover > .nav_ul {
+        top: 55px;
+    }
+}
